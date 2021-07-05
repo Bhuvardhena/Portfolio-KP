@@ -22,7 +22,6 @@ html {
 /*Start of hero section */
 
 
-
 #herosection{
   /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/profile.jpg); */
   background-color: #000;
@@ -56,14 +55,14 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  color: green;
+  color: #fff;
   -webkit-text-stroke:3rem #red;
-  border-right: 2px solid green;
+  border-right: 2px solid #fff;
   overflow: hidden;
   animation: animate 6s linear infinite;
 }
 #herosection span{
-  color:#e19f1e;
+  color:#fff;
   font-weight: bolder;
 
 }
@@ -102,7 +101,6 @@ html {
     color: #001F3F;
     background-color: #fff;
 }
-
 
 /*Start of About section */
 
