@@ -18,8 +18,12 @@ html {
   justify-content: center;
 
 }
+/* Nav Bar  */
+
+/* End Nav Bar */
 
 /*Start of hero section */
+
 
 
 #herosection{
@@ -101,6 +105,7 @@ html {
     color: #001F3F;
     background-color: #fff;
 }
+
 
 /*Start of About section */
 
@@ -211,7 +216,7 @@ html {
 
 }
  #projectsection .project{
-  padding: 100px 30px;
+  padding: 10px 30px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -222,7 +227,7 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 20px;
 
 
@@ -291,6 +296,16 @@ html {
 
 }
 
+#footersection .brand h2,h3,p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#footersection .brand h3{
+    color: red;
+}
  #footersection .footer{
     min-height: 200px;
     display: flex;
@@ -300,20 +315,19 @@ html {
 
 }
 #footersection .footer-icon {
-  display: flex;
-  align-items: center;
-  flex-direction:column;
-  justify-content: center;
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items:center;
+        padding: 20px;
         margin: 0 auto;
+        margin-left: 10px;
         font-size: 50%;
-        margin-bottom: 20px;
+        text-align: center;
 
 }
-#footersection .brand{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+#footersection .footer-copy{
+  text-align: center;
 }
 #footersection .brand h2:nth-child(1) {
   display: flex;
@@ -333,8 +347,7 @@ html {
   font-size: 1.3rem;
   color: #fff;
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 #footer .footer-icon:hover img {
 	filter: grayscale(0);
@@ -352,3 +365,20 @@ html {
         width: 100%;
       }
 }
+@media only screen and (min-width: 768px) {
+	.nav-bar .nav-list .hamburger {
+		display: none;
+	}
+	.nav-bar {
+		width: 80%;
+	}
+	.nav-bar .nav-list ul {
+		transform: translateX(0);
+		position: initial;
+		padding: 0;
+		z-index: initial;
+		background-color: transparent;
+	}
+	.nav-bar .nav-list ul li {
+		display: inline-block;
+	}
