@@ -148,11 +148,7 @@ html {
 .nav-bar .nav-list.open ul {
 	transform: translateY(70px);
 }
-/* End Nav Bar */
 
-/* End Nav Bar */
-
-/*Start of hero section */
 
 
 
@@ -369,79 +365,7 @@ html {
     color: #001F3F;
     background-color: #000;
 }
-/*End of About section */
 
-/*Start of project section */
-/* #projectsection {
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-basis: 80%;
-  animation: transitionIn 0.75s;
-}
- #projectsection .project{
-  padding: 10px 30px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-#projectsection .project-top{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-#projectsection .project-title{
-  font-size: 3.5rem;
-  margin-bottom: 10px;
-    font-weight: normal;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin: 0 auto;
-}
-#projectsection .project-bottom{
-  margin-top: 50px;
-    margin-bottom: 5px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;  border-radius: 10px;
-    margin-bottom: 10px;
-}
-#projectsection img{
-  max-width: 1200px;
-  width: 100%;
-  height:300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px auto;
-    border-radius: 10px;
-}
-#projectsection img:hover{
-  color: red;
-}
-#projectsection .project-bottom .project-img h2{
-  text-align: center;
-  background-color: #E8E8E8;
-  border-radius: 25px;
-}
-#projectsection  .project-bottom .project-img {
-  margin-bottom: 40px;
-  transition: .5s;
-}
-#projectsection .project-bottom .project-img:hover{
-  color: #e19f1e;
-} */
 
 #projectsection {
   background-color: #000;
@@ -540,13 +464,7 @@ html {
   opacity: .4;
   z-index: -1;
 }
-/* #projectsection .project-item img{
-  animation-name: slide;
-        animation-duration: 10s;
-        animation-direction:normal;
-        animation-timing-function:ease;
-        animation-iteration-count: infinite;
-} */
+
 
 /*Start of Footer section */
 #footersection {
@@ -648,21 +566,7 @@ color: yellow;
   0% {
     background-position: 0 0;
   }
-  /* 16.66% {
-    background-position: 0 0;
-  }
-  33.32% {
-    background-position: -800px 0;
-  }
-  49.98% {
-    background-position: -800px 0;
-  }
-  66.64% {
-    background-position: -1600px 0;
-  }
-  83.30% {
-    background-position: -1600px 0;
-  } */
+
   50%{
     background-position: -500 0;
   }
