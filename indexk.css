@@ -142,6 +142,8 @@ html {
 	display: block;
 	letter-spacing: .15rem;
 	padding: 2rem 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 .nav-bar .nav-list.open ul {
 	transform: translateY(70px);
@@ -161,24 +163,38 @@ html {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
     animation: transitionIn 0.75s;
+    position: relative;
 }
 
 #herosection h1{
   color: white;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 500;
   margin-bottom: 10px;
   margin-top: 50px;
+  position: absolute;
+  top: 100px;
+
+}
+#herosection h2{
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 200px;
 }
 #herosection h3{
   color: #000;
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: 500;
   margin-bottom: 20px;
   position:relative;
   -webkit-text-stroke:3rem #GREY;
+  position: absolute;
+  top: 260px;
 }
 #herosection h3::before{
   content: attr(data-text);
@@ -204,7 +220,8 @@ html {
 	margin: 0 auto;
 	padding: 0 50px;
 	flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+
 }
 #herosection a{
 
@@ -233,7 +250,35 @@ html {
     color: #001F3F;
     background-color: #fff;
 }
-
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid #fff;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
 
 /*Start of About section */
 
@@ -337,7 +382,6 @@ html {
   flex-wrap: nowrap;
   flex-basis: 80%;
   animation: transitionIn 0.75s;
-
 }
  #projectsection .project{
   padding: 10px 30px;
@@ -353,8 +397,6 @@ html {
   flex-direction: column;
   margin-top: 0px;
   margin-bottom: 20px;
-
-
 }
 #projectsection .project-title{
   font-size: 3.5rem;
@@ -384,7 +426,6 @@ html {
     align-items: center;
     margin: 0px auto;
     border-radius: 10px;
-
 }
 #projectsection img:hover{
   color: red;
@@ -397,23 +438,26 @@ html {
 #projectsection  .project-bottom .project-img {
   margin-bottom: 40px;
   transition: .5s;
-
 }
 #projectsection .project-bottom .project-img:hover{
   color: #e19f1e;
-
 } */
 
-#projectsection {}
+#projectsection {
+  background-color: #000;
+  margin-top: -300PX
+}
 #projectsection .project{
   flex-direction: column;
   text-align: center;
   max-width: 1500px;
   margin:0 auto;
-  padding: 100px 0;
+  padding: 0px 0;
+
 }
 #projectsection .projecttop .all-title{
   margin-bottom: 30px;
+  color: #fff;
 }
 #projectsection .project-bottom{
   display: flex;
@@ -439,19 +483,30 @@ html {
   cursor: pointer;
 
 }
+#projectsection .project-item:hover
+{
+  background-color: #000;
+  border-radius: 20px;
+  box-shadow:  0 32px 50px 10px rgba(56,78,90,88);
+  transform: translateY(-50px);
+}
+#projectsection .project-item:hover .head{
+  color: red;
+}
 #projectsection .project-item img{
   width: 100%;
 }
-#projectsection .project-item h2{
-  color: #000;
+#projectsection .project-bottom .project-item h2{
+  color: #e19f1e;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  text-transform:uppercase;
 }
 #projectsection .project-item p{
-  color: #fff;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,14 +514,22 @@ html {
   text-align: center;
   margin-top: 20px;
   font-size: 1.5rem;
+    text-transform: capitalize;
+    transition: .5s;
+    font-family:cursive;
+}
+#projectsection .project-item p a{
+  text-decoration: none;
+  color: #000;
+      transition: .5s;
+}
+#projectsection .project-item:hover p a{
+  color: #fff;
 }
 
-#projectsection .project-item:hover{
-  background-color: #e19f1e;
-  border-radius: 20px;
-  box-shadow:  0 32px 50px rgba(56,78,90,88);
+#projectsection  .project-bottom .project-item .p{
+  color: #red;
 }
-
 #projectsection .project-item::after{
   content: '';
   position: absolute;
@@ -477,6 +540,13 @@ html {
   opacity: .4;
   z-index: -1;
 }
+/* #projectsection .project-item img{
+  animation-name: slide;
+        animation-duration: 10s;
+        animation-direction:normal;
+        animation-timing-function:ease;
+        animation-iteration-count: infinite;
+} */
 
 /*Start of Footer section */
 #footersection {
@@ -490,7 +560,7 @@ html {
   flex-wrap: nowrap;
   flex-basis: 80%;
   padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-bottom: 30px; */
   animation: transitionIn 0.75s;
 
 }
@@ -551,6 +621,13 @@ color: yellow;
   width: 100%;
   margin-bottom: 0;
 }
+.designer p{
+ padding-top: 5px;
+ font-size: 1.3rem;
+ color: #fff;
+ width: 100%;
+}
+
 #footer .footer-icon:hover img {
 	filter: grayscale(0);
 }
@@ -567,6 +644,52 @@ color: yellow;
         width: 100%;
       }
 }
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  /* 16.66% {
+    background-position: 0 0;
+  }
+  33.32% {
+    background-position: -800px 0;
+  }
+  49.98% {
+    background-position: -800px 0;
+  }
+  66.64% {
+    background-position: -1600px 0;
+  }
+  83.30% {
+    background-position: -1600px 0;
+  } */
+  50%{
+    background-position: -500 0;
+  }
+  83.30% {
+    background-position: -1900px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
 @media only screen and (min-width: 768px) {
 	.nav-bar .nav-list .hamburger {
 		display: none;
@@ -590,8 +713,14 @@ color: yellow;
 	}
 @media only screen and (min-width: 768px) {
   #herosection h1{
-    font-size: 6rem;
+    font-size: 4rem;
   }
+    #herosection h2{
+          font-size: 4.5rem;
+    }
+    #herosection h3{
+          font-size: 5rem;
+    }
   .all-title{
     font-size: 4.5rem;
   }
